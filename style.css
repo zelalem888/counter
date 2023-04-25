@@ -19,6 +19,11 @@ body{
     padding-bottom: 0.6em;
 
 }
+.biil{
+    color: #ff0000;
+    font-weight: bolder;
+    font-size: 2em;
+}
 .main-counter{
    
     font-size: 5em;
