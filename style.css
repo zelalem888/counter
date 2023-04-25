@@ -26,18 +26,19 @@ body{
     font-weight: bolder;
 }
 .btns button{
-    margin: 20px;
+    margin: 7px;
     padding: 7px 20px;
     font-size: 1em;
     border: 2px solid black;
     border-radius: 10px;
     letter-spacing: 5px;
 
+
 }
 
 .btns button:hover{
     background-color: rgb(31, 31, 88);
     color: white;
-     border: none;
+    border: none;
     padding: 9px 22px;
 }
