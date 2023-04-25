@@ -15,5 +15,7 @@ minus.addEventListener("click",()=>{
 back.addEventListener("click",()=>{
     x = 0;
     count.innerHTML = x;
+    var audio = new Audio("audio.mp3");
+    audio.play();
 });
 
