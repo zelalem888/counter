@@ -38,4 +38,6 @@ body{
 .btns button:hover{
     background-color: rgb(31, 31, 88);
     color: white;
+     border: none;
+    padding: 9px 22px;
 }
