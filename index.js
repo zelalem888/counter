@@ -9,13 +9,13 @@ var anyone = document.querySelector('.bills');
 const back = document.querySelector('.start').addEventListener("click",()=>{
 
 var countup = setInterval(function(){
-  anytime;
   if (x >= 6) {
     
     y = y + 10;
     anyone.innerHTML = y;
     alert('your final bill is $ ' + y);
     clearInterval(countup);
+     anytime.innerHTML = 0;
   }else{
 
     anytime.innerHTML = x;
