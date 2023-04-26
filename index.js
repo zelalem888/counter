@@ -1,43 +1,70 @@
-const one = document.querySelector('.a1');
 
-const minusone = document.querySelector('.a11');
-
-const minus = document.querySelector('.minus');
-const back = document.querySelector('.back');
-const count = document.querySelector('.count');
-const bill = document.querySelector('.bill');
-const bills = document.querySelector('.bills');
-var x = 0;
 var y = 0;
-one.addEventListener("click",() => { 
+var x = 0;
 
-    x++;
-   
-    y = y + 1.6666666667;
+var anytime = document.querySelector('.count');
+var anyone = document.querySelector('.bills');
+
+
+const back = document.querySelector('.start').addEventListener("click",()=>{
     
-    if( x >= 6){
-        
-        bill.innerHTML = parseInt(y);
-       x = 0;
-       return;
-        
-            
-    }
-    else{
-        count.innerHTML = x;
-    }
+    x = x + 5;
+    y = y + 10;
+    anytime.innerHTML = x; 
+    anyone.innerHTML = y;
+    return;
+
     
-}
-);
-
-
-back.addEventListener("click",()=>{
-    x = 0;
-    y = 0;
-    count.innerHTML = x;
-    bill.innerHTML = y;
-    var audio = new Audio("audio.mp3");
-    audio.play();
 });
+
+const front = document.querySelector('.bill').addEventListener("click",()=>{
+
+    alert('your final is $ ' + y);
+    anyone.innerHTML = 0;
+    anytime.innerHTML = 0;
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// back.addEventListener("click",()=>{
+//     x = 0;
+//     y = 0;
+//     count.innerHTML = x;
+//     bill.innerHTML = y;
+//     var audio = new Audio("audio.mp3");
+//     audio.play();
+// });
 
 
