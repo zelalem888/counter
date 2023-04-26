@@ -15,12 +15,12 @@ var countup = setInterval(function(){
     anyone.innerHTML = y;
     alert('your final bill is $ ' + y);
     clearInterval(countup);
-     x = -1;
-  }else{
+     x = 0;
+  }
 
     anytime.innerHTML = x;
 
-  }
+ 
   x++;
 
 
