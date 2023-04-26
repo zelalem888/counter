@@ -7,23 +7,43 @@ var anyone = document.querySelector('.bills');
 
 
 const back = document.querySelector('.start').addEventListener("click",()=>{
+
+var countup = setInterval(function(){
+  anytime;
+  if (x >= 6) {
     
-    x = x + 5;
     y = y + 10;
-    anytime.innerHTML = x; 
     anyone.innerHTML = y;
-    return;
+    alert('your final bill is $ ' + y);
+    clearInterval(countup);
+  }else{
 
-    
+    anytime.innerHTML = x;
+
+  }
+  x++;
+
+
+}, 1000);
+return;
+
 });
 
-const front = document.querySelector('.bill').addEventListener("click",()=>{
+const bill = document.querySelector('.bill').addEventListener("click",()=>{
 
-    alert('your final is $ ' + y);
-    anyone.innerHTML = 0;
-    anytime.innerHTML = 0;
+    alert('your final bill is $ ' + y);
 
-});
+})
+
+
+
+// const front = document.querySelector('.bill').addEventListener("click",()=>{
+
+//     alert('your final is $ ' + y);
+//     anyone.innerHTML = 0;
+//     anytime.innerHTML = 0;
+
+// });
 
 
 
